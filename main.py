@@ -1,4 +1,5 @@
 import datetime
+import output
 
 today = datetime.datetime.now()
 arrival = datetime.datetime(2026,3,10)
@@ -11,4 +12,4 @@ def format_timedelta(td):
 
     return f'{weeks} weeks and {days} days remaining'
 
-print(format_timedelta(timeRemaining))
+output.generateOutput(format_timedelta(timeRemaining))
